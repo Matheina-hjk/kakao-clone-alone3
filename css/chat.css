@@ -1,0 +1,80 @@
+.chat__screen {
+  background: linear-gradient(
+      rgba(241, 242, 246, 0.918),
+      rgba(241, 242, 246, 0.2) 75%
+    ),
+    url("../images/harrypotter.jpg");
+  background-size: 400px 600px;
+  background-position: 0px 30px;
+  background-repeat: no-repeat;
+}
+.chat {
+  position: relative;
+}
+.chat__title {
+  font-weight: 600;
+}
+.chat__date {
+  display: flex;
+  justify-content: center;
+}
+.chat__date-detail {
+  background-color: rgba(255, 255, 255, 0.315);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.chat__receive {
+  display: flex;
+  margin-top: 10px;
+}
+.chat__receive-all {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: start;
+}
+.chat__receive-name {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.chat__receive-message {
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 5px 5px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-right: 3px;
+}
+.chat__receive-last {
+  display: flex;
+}
+.chat__time {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.chat__send {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.chat__send-message {
+  background-color: rgba(154, 200, 253, 0.603);
+  padding: 5px 5px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-left: 3px;
+}
+.chat__write {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.986);
+}
+.chat__write-column input {
+  border: none;
+  width: 200px;
+}

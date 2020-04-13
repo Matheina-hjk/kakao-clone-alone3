@@ -11,9 +11,10 @@
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">00:00</span>
+      <div class="js-clock">
+        <span>00:00</span>
       </div>
+      <script src="clock.js"></script>
       <div class="status-bar__column">
         <i class="far fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -25,13 +26,9 @@
     </div>
     <header class="header">
       <div class="header__column">
-        <ul>
-          <li class="gotomore">
-            <a href="more.html">
-              <i class="fas fa-arrow-left"></i>
-            </a>
-          </li>
-        </ul>
+        <a href="more.html" class="gotopre">
+          <i class="fas fa-arrow-left"></i>
+        </a>
         <h1 class="header__title">Settings</h1>
       </div>
       <div class="header__column">
