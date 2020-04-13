@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9a4157c630.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chatting | Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">00:00</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">75%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__column">
+        <ul>
+          <li class="gotoindex">
+            <a href="index.html">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </li>
+        </ul>
+        <h1 class="header__title">Ronald Weasley</h1>
+      </div>
+      <div class="header__column">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <main class="chat">
+      <span class="chat__date">2020. 04. 13. Mon</span>
+      <div class="chat__receive">
+        <img src="images/ron.jpg" class="avatar--sm" />
+        <span class="chat__receive-name">Ronald Weasley</span>
+        <span class="chat__receive-message">Hungry again..</span>
+        <span class="chat__receive-message"
+          >Let's grab a bite before we go there</span
+        >
+        <span class="chat__receive-message"
+          >Chicken or burger</span
+        >
+        <span class="chat__time">13:05</span>
+      </div>
+      <div class="chat__send">
+        <span class="chat__time">13:08</span>
+        <span class="chat__send-message">Well, I'm craving something else</span>
+      </div>
+      <div class="chat__receive">
+        <img src="images/ron.jpg" class="avatar--sm" />
+        <span class="chat__receive-name">Ronald Weasley</span>
+        <span class="chat__receive-message">Which one?</span>
+        <span class="chat__time">13:10</span>
+    </main>
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input type="text" placeholder="Send Message" />
+      </div>
+      <div class="chat__write-column">
+        <i class="far fa-smile"></i>
+        <i class="fas fa-hashtag"></i>
+      </div>
+    </div>
+  </body>
+</html>
