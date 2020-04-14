@@ -1,5 +1,9 @@
 .nav {
   background-color: rgb(247, 247, 247);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 .nav ul {
   display: flex;
