@@ -7,9 +7,20 @@
   background-size: 400px 600px;
   background-position: 0px 30px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header__wrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  padding: 10px 20px;
 }
 .chat {
-  position: relative;
+  position: absolute;
+  top: 80px;
+  min-height: 1000vh;
+  width: 360px;
 }
 .chat__title {
   font-weight: 600;
@@ -41,40 +52,71 @@
 .chat__receive-message {
   background-color: rgba(255, 255, 255, 0.808);
   padding: 5px 5px;
-  margin-bottom: 7px;
   border-radius: 10px;
   font-size: 14px;
   margin-right: 3px;
 }
 .chat__receive-last {
   display: flex;
+  margin-top: 5px;
 }
 .chat__time {
   font-size: 11px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .chat__send {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin: 20px 0px;
 }
 .chat__send-message {
   background-color: rgba(154, 200, 253, 0.603);
   padding: 5px 5px;
-  margin-bottom: 7px;
   border-radius: 10px;
   font-size: 14px;
   margin-left: 3px;
+  display: block;
 }
-.chat__write {
+.writingbox {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 400px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-  background-color: rgba(255, 255, 255, 0.986);
 }
-.chat__write-column input {
+.chat__write {
+  align-items: center;
+  padding: 15px 50px;
+  background-color: rgba(255, 255, 255, 0.986);
   border: none;
-  width: 200px;
+  width: 100%;
+  transition: all 0.2s ease-in;
+  margin: 0 auto;
+}
+.chat__icon {
+  font-size: 20px;
+  position: absolute;
+  margin: 10px 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+.chat__icon-left {
+  left: 0px;
+}
+.chat__icon-right {
+  right: 0px;
+}
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
+}
+.chat__write:focus {
+  width: 80%;
+  height: 90%;
+  border-radius: 20px;
+  transform: translateY(-50px);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }

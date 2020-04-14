@@ -28,3 +28,6 @@ a {
   color: rgb(24, 23, 23);
   text-decoration: none;
 }
+input:focus {
+  outline: none;
+}
